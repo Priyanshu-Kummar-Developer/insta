@@ -1,0 +1,214 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container Layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+/* Left Section - Image Preview */
+.left-section img {
+  height: 450px;
+}
+
+/* Right Section - Login Box */
+.right-section {
+  width: 350px;
+  padding: 40px 30px;
+  background-color: #fff;
+  /* border: 1px solid #dbdbdb; */
+  text-align: center;
+}
+
+/* Instagram Logo */
+.logo {
+  font-family: 'Grand Hotel', cursive;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+/* Login Form */
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  background-color: #fafafa;
+  font-size: 14px;
+}
+
+/* Show/Hide Password */
+.password-wrapper {
+  position: relative;
+}
+
+.show-btn {
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  font-size: 12px;
+  color: #385185;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Login Button */
+.login-btn {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background-color: #0095f6;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #007cd1;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #8e8e8e;
+  font-size: 13px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #dbdbdb;
+  margin: 0 10px;
+}
+
+/* Facebook Login */
+.fb-login {
+  background: none;
+  border: none;
+  color: rgb(0, 149, 246, 1);
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.fb-login img {
+  width: 18px;
+  margin-right: 8px;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 15px;
+  font-size: .875rem;
+  color: rgb(43, 48, 54, 0.8);
+  text-decoration: none;
+  text-overflow: ellipsis;
+  touch-action: manipulation;
+  font-style: initial;
+}
+
+/* Signup Box */
+.signup-box {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #fff;
+  /* border: 1px solid #dbdbdb; */
+  font-size: 14px;
+}
+
+.signup-box a {
+  color: rgb(0, 149, 246, 1);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #8e8e8e;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  color: #8e8e8e;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.footer-bottom select {
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  color: #8e8e8e;
+  cursor: pointer;
+}
+.footer-bottom-right {
+  font-size: 12px;
+}
+.footer-bottom p {
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .left-section img {
+    height: 400px;
+    width: auto;
+  }
+
+  .right-section {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}
